@@ -1,0 +1,9 @@
+{
+  "name": "basebuilder-stylelint",
+  "version": "0.1",
+  "description": "The stylelint config for our default WordPress projects",
+  "main": "index.js",
+  "repository": "https://github.com/Studio-Lemon/basebuilder-stylelint",
+  "author": "Erik van der Bas",
+  "license": "MIT"
+}
