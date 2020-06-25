@@ -1,14 +1,11 @@
 {
   "name": "stylelint-basebuilder",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "The stylelint config for our default WordPress projects",
   "main": "index.js",
-  "repository": "https://github.com/Studio-Lemon/basebuilder-stylelint",
+  "repository": "https://github.com/Studio-Lemon/stylelint-basebuilder",
   "author": "Erik van der Bas",
   "license": "MIT",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "peerDependencies": {
     "stylelint": "^12.0.0 || ^13.0.0"
   },
