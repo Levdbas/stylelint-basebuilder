@@ -11,6 +11,7 @@ module.exports = {
   "rules": {
     "no-empty-source": null,
     "order/order": [
+      "dollar-variables",
       "at-rules",
       {
         "name": "include",
