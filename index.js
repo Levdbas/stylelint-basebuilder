@@ -1,46 +1,47 @@
 // Stylelint 7.11.0
 
 module.exports = {
-  "extends": [
-    "stylelint-config-standard",
-    "stylelint-config-recess-order",
-  ],
-  "plugins": [
-    "stylelint-order"
-  ],
-  "rules": {
+  extends: ["stylelint-config-standard", "stylelint-config-recess-order"],
+  plugins: ["stylelint-order"],
+  rules: {
     "no-empty-source": null,
     "order/order": [
       "dollar-variables",
       "at-rules",
       {
-        "name": "include",
-        "type": "at-rule",
-        "hasBlock": false
+        name: "include",
+        type: "at-rule",
+        hasBlock: false,
       },
       {
-        "name": "extend",
-        "type": "at-rule",
-        "hasBlock": false
+        name: "extend",
+        type: "at-rule",
+        hasBlock: false,
       },
       "custom-properties",
       "declarations",
       "at-rules",
       {
-        "name": "include",
-        "type": "at-rule",
-        "hasBlock": true
+        name: "include",
+        type: "at-rule",
+        hasBlock: true,
       },
       "at-rules",
       {
-        "name": "media",
-        "type": "at-rule",
-        "hasBlock": true
+        name: "media",
+        type: "at-rule",
+        hasBlock: true,
       },
-      "rules"
+      "at-rules",
+      {
+        name: "supports",
+        type: "at-rule",
+        hasBlock: true,
+      },
+      "rules",
     ],
     "order/properties-alphabetical-order": null,
-    "indentation": "tab",
+    indentation: "tab",
     "string-quotes": "double",
     "no-duplicate-selectors": null,
     "color-hex-case": "lower",
@@ -62,18 +63,16 @@ module.exports = {
     "comment-empty-line-before": "always",
     "at-rule-no-vendor-prefix": true,
     "at-rule-empty-line-before": [
-      "always", {
-        "except": [
-          "blockless-after-blockless",
-          "first-nested"
-        ]
-      }
+      "always",
+      {
+        except: ["blockless-after-blockless", "first-nested"],
+      },
     ],
     "rule-empty-line-before": "always",
     "selector-pseudo-class-parentheses-space-inside": "always",
     "declaration-block-no-duplicate-properties": true,
     "no-descending-specificity": null,
-    "unit-whitelist": [
+    "unit-allowed-list": [
       "em",
       "rem",
       "vw",
@@ -83,12 +82,12 @@ module.exports = {
       "s",
       "ms",
       "deg",
-      "fr"
+      "fr",
     ],
     "at-rule-no-unknown": [
       true,
       {
-        "ignoreAtRules": [
+        ignoreAtRules: [
           "extend",
           "at-root",
           "debug",
@@ -103,9 +102,9 @@ module.exports = {
           "include",
           "content",
           "return",
-          "function"
-        ]
-      }
-    ]
-  }
-}
+          "function",
+        ],
+      },
+    ],
+  },
+};
