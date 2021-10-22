@@ -51,6 +51,7 @@ module.exports = {
     "selector-attribute-operator-space-before": "never",
     "selector-attribute-operator-space-after": "never",
     "selector-attribute-brackets-space-inside": "never",
+    "block-opening-brace-newline-after": "always",
     "declaration-block-trailing-semicolon": "always",
     "declaration-colon-space-before": "never",
     "max-nesting-depth": 6,
