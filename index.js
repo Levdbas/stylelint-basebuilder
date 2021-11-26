@@ -1,7 +1,7 @@
 // Stylelint 7.11.0
 
 module.exports = {
-  extends: ["stylelint-config-standard", "stylelint-config-recess-order"],
+  extends: ["stylelint-config-standard-scss", "stylelint-config-recess-order"],
   plugins: ["stylelint-order"],
   rules: {
     "no-empty-source": null,
@@ -41,7 +41,7 @@ module.exports = {
       "rules",
     ],
     "order/properties-alphabetical-order": null,
-    indentation: "tab",
+    "indentation": "tab",
     "string-quotes": "double",
     "no-duplicate-selectors": null,
     "color-hex-case": "lower",
@@ -90,6 +90,7 @@ module.exports = {
       {
         ignoreAtRules: [
           "extend",
+          "use",
           "at-root",
           "debug",
           "warn",
@@ -107,5 +108,12 @@ module.exports = {
         ],
       },
     ],
+    "selector-class-pattern": null,
+    "selector-id-pattern": null,
+    "color-function-notation": null,
+    "declaration-block-no-redundant-longhand-properties": null,
+    "scss/no-global-function-names": null,
+    "scss/at-extend-no-missing-placeholder": null,
+    "scss/dollar-variable-empty-line-before": null,
   },
 };
