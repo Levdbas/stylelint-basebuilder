@@ -4,6 +4,7 @@ module.exports = {
   extends: ["stylelint-config-standard-scss", "stylelint-config-recess-order"],
   plugins: ["stylelint-order"],
   rules: {
+    "custom-property-pattern": null,
     "no-empty-source": null,
     "order/order": [
       "dollar-variables",
