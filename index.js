@@ -1,8 +1,7 @@
-// Stylelint 7.11.0
-
 module.exports = {
-  extends: ["stylelint-config-standard-scss", "stylelint-config-recess-order"],
-  plugins: ["stylelint-order"],
+  extends: ["stylelint-config-standard-scss", "stylelint-config-recess-order", "stylelint-config-prettier"],
+  plugins: ["stylelint-order", "stylelint-prettier"],
+  customSyntax: 'postcss-scss',
   rules: {
     "custom-property-pattern": null,
     "no-empty-source": null,
@@ -19,7 +18,7 @@ module.exports = {
     "selector-attribute-operator-space-before": "never",
     "selector-attribute-operator-space-after": "never",
     "selector-attribute-brackets-space-inside": "never",
-    "selector-pseudo-class-parentheses-space-inside": "always",
+    "selector-pseudo-class-parentheses-space-inside": "never",
     "block-opening-brace-newline-after": "always",
     "declaration-block-trailing-semicolon": "always",
     "declaration-block-no-duplicate-properties": true,
@@ -35,7 +34,6 @@ module.exports = {
     "font-weight-notation": "numeric",
     "comment-empty-line-before": "always",
     "at-rule-no-vendor-prefix": true,
-    "rule-empty-line-before": "always",
     "no-descending-specificity": null,
     "scss/no-global-function-names": null,
     "scss/at-extend-no-missing-placeholder": null,
@@ -117,5 +115,6 @@ module.exports = {
         ],
       },
     ],
+    "prettier/prettier": [true, { "singleQuote": false, "useTabs": true }],
   },
 };
