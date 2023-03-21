@@ -1,6 +1,6 @@
 {
   "name": "stylelint-basebuilder",
-  "version": "2.1",
+  "version": "2.1.0",
   "description": "The stylelint config for our default WordPress projects",
   "main": "index.js",
   "repository": "https://github.com/Studio-Lemon/stylelint-basebuilder",
