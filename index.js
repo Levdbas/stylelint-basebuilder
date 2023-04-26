@@ -115,6 +115,10 @@ module.exports = {
         ],
       },
     ],
-    "prettier/prettier": [true, { "singleQuote": false, "useTabs": true }],
+    "prettier/prettier": [
+      true, {
+        "singleQuote": false,
+        "useTabs": true
+      }],
   },
 };
