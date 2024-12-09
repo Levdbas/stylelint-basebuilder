@@ -3,6 +3,7 @@ module.exports = {
   plugins: ["stylelint-order", "stylelint-prettier"],
   customSyntax: 'postcss-scss',
   rules: {
+    "prettier/prettier": [true, { "trailingComma": "all", "tabWidth": 4, "semi": true, "singleQuote": true, "printWidth": 150 }],
     "custom-property-pattern": null,
     "no-empty-source": null,
     "no-duplicate-selectors": null,
@@ -104,7 +105,8 @@ module.exports = {
     "prettier/prettier": [
       true, {
         "singleQuote": false,
-        "useTabs": true
+        "useTabs": true,
+        "plugins": []
       }],
   },
 };
