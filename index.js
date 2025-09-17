@@ -66,6 +66,11 @@ module.exports = {
         hasBlock: true,
       },
       "rules",
+      {
+        name: "each",
+        type: "at-rule",
+        hasBlock: true,
+      },
     ],
     "unit-allowed-list": [
       "em",
