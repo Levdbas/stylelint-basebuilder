@@ -7,9 +7,9 @@
   "author": "Erik van der Bas",
   "license": "MIT",
   "peerDependencies": {
-    "postcss": "^8.4",
-    "prettier": "^3.0",
-    "stylelint": "^16.0"
+    "postcss": "^8.5",
+    "prettier": "^3.8",
+    "stylelint": "^17.2"
   },
   "dependencies": {
     "postcss-scss": "^4.0.9",
@@ -20,6 +20,6 @@
     "stylelint-prettier": "^5.0.3"
   },
   "devDependencies": {
-    "stylelint": "^17.6.0"
+    "stylelint": "^17.13.0"
   }
 }
