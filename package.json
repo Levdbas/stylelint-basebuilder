@@ -8,18 +8,18 @@
   "license": "MIT",
   "peerDependencies": {
     "postcss": "^8.5",
-    "prettier": "^3.8",
-    "stylelint": "^17.2"
+    "prettier": "^3.9",
+    "stylelint": "^17.16"
   },
   "dependencies": {
     "postcss-scss": "^4.0.9",
-    "stylelint-config-recess-order": "^7.7",
+    "stylelint-config-recess-order": "^7.8",
     "stylelint-config-standard": "^40.0",
     "stylelint-config-standard-scss": "^17.0",
     "stylelint-order": "^8.1",
     "stylelint-prettier": "^5.0.3"
   },
   "devDependencies": {
-    "stylelint": "^17.13.0"
+    "stylelint": "^17.16.0"
   }
 }
